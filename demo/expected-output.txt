@@ -1,0 +1,17 @@
+Telemetry quality gate | 2026-01-15T12:00:00Z
+Gate: FAIL | Fleet: degraded
+Inventory: 6 | Latest delivery over budget: 2
+Records: records_read=11, invalid_records=4, duplicate_replays=1, conflicting_records=2, accepted_events=4
+States: healthy=2, degraded=1, unknown=3
+device_id | state | reason | event age (s) | delivery (s)
+cedar-01-router | unknown | stale | 600 | 599
+cedar-01-terminal | healthy | fresh ok observation | 30 | 3
+cedar-02-router | healthy | fresh ok observation | 180 | 150
+cedar-02-terminal | degraded | fresh explicit error | 50 | 2
+harbor-01-router | unknown | missing | - | -
+harbor-01-terminal | unknown | missing | - | -
+Issue: {"line": 8, "reason": "device attribution disagrees with inventory"}
+Issue: {"line": 9, "reason": "timestamp is in the future beyond clock tolerance"}
+Issue: {"line": 10, "reason": "status must be ok or error"}
+Issue: {"line": 11, "reason": "device absent from inventory"}
+Issue: {"event_id": "d1", "lines": [5, 6], "reason": "conflicting ID quarantined"}

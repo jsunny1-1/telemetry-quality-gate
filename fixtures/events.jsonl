@@ -1,0 +1,11 @@
+{"event_id":"a1","device_id":"cedar-01-terminal","site_id":"cedar-01","brand":"Cedar","observed_at":"2026-01-15T11:59:30Z","received_at":"2026-01-15T11:59:33Z","status":"ok"}
+{"event_id":"a1","device_id":"cedar-01-terminal","site_id":"cedar-01","brand":"Cedar","observed_at":"2026-01-15T11:59:30Z","received_at":"2026-01-15T11:59:33Z","status":"ok"}
+{"event_id":"b1","device_id":"cedar-01-router","site_id":"cedar-01","brand":"Cedar","observed_at":"2026-01-15T11:50:00Z","received_at":"2026-01-15T11:59:59Z","status":"ok"}
+{"event_id":"c1","device_id":"cedar-02-terminal","site_id":"cedar-02","brand":"Cedar","observed_at":"2026-01-15T11:59:10Z","received_at":"2026-01-15T11:59:12Z","status":"error"}
+{"event_id":"d1","device_id":"harbor-01-router","site_id":"harbor-01","brand":"Harbor","observed_at":"2026-01-15T11:59:00Z","received_at":"2026-01-15T11:59:01Z","status":"ok"}
+{"event_id":"d1","device_id":"harbor-01-router","site_id":"harbor-01","brand":"Harbor","observed_at":"2026-01-15T11:59:00Z","received_at":"2026-01-15T11:59:01Z","status":"error"}
+{"event_id":"e1","device_id":"cedar-02-router","site_id":"cedar-02","brand":"Cedar","observed_at":"2026-01-15T11:57:00Z","received_at":"2026-01-15T11:59:30Z","status":"ok"}
+{"event_id":"f1","device_id":"harbor-01-terminal","site_id":"cedar-01","brand":"Cedar","observed_at":"2026-01-15T11:59:00Z","received_at":"2026-01-15T11:59:01Z","status":"ok"}
+{"event_id":"g1","device_id":"harbor-01-terminal","site_id":"harbor-01","brand":"Harbor","observed_at":"2026-01-15T12:01:00Z","received_at":"2026-01-15T12:01:01Z","status":"ok"}
+{"event_id":"h1","device_id":"harbor-01-terminal","site_id":"harbor-01","brand":"Harbor","observed_at":"2026-01-15T11:59:00Z","received_at":"2026-01-15T11:59:01Z","status":"unknown"}
+{"event_id":"i1","device_id":"unregistered-device","site_id":"harbor-01","brand":"Harbor","observed_at":"2026-01-15T11:59:00Z","received_at":"2026-01-15T11:59:01Z","status":"ok"}

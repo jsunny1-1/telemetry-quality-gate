@@ -1,0 +1,8 @@
+[
+  {"device_id": "cedar-01-terminal", "site_id": "cedar-01", "brand": "Cedar", "freshness_seconds": 300},
+  {"device_id": "cedar-01-router", "site_id": "cedar-01", "brand": "Cedar", "freshness_seconds": 300},
+  {"device_id": "cedar-02-terminal", "site_id": "cedar-02", "brand": "Cedar", "freshness_seconds": 300},
+  {"device_id": "cedar-02-router", "site_id": "cedar-02", "brand": "Cedar", "freshness_seconds": 300},
+  {"device_id": "harbor-01-terminal", "site_id": "harbor-01", "brand": "Harbor", "freshness_seconds": 300},
+  {"device_id": "harbor-01-router", "site_id": "harbor-01", "brand": "Harbor", "freshness_seconds": 300}
+]

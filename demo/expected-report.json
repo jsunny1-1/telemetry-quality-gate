@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-01-15T12:00:00Z",
+  "delivery_budget_seconds": 60,
+  "clock_tolerance_seconds": 5,
+  "quality_gate": "fail",
+  "fleet_state": "degraded",
+  "inventory_devices": 6,
+  "counts": {
+    "records_read": 11,
+    "invalid_records": 4,
+    "duplicate_replays": 1,
+    "conflicting_records": 2,
+    "accepted_events": 4
+  },
+  "states": {
+    "healthy": 2,
+    "degraded": 1,
+    "unknown": 3
+  },
+  "latest_delivery_over_budget": 2,
+  "devices": [
+    {
+      "device_id": "cedar-01-router",
+      "brand": "Cedar",
+      "site_id": "cedar-01",
+      "state": "unknown",
+      "reason": "stale",
+      "event_age_seconds": 600.0,
+      "delivery_seconds": 599.0,
+      "delivery_over_budget": true
+    },
+    {
+      "device_id": "cedar-01-terminal",
+      "brand": "Cedar",
+      "site_id": "cedar-01",
+      "state": "healthy",
+      "reason": "fresh ok observation",
+      "event_age_seconds": 30.0,
+      "delivery_seconds": 3.0,
+      "delivery_over_budget": false
+    },
+    {
+      "device_id": "cedar-02-router",
+      "brand": "Cedar",
+      "site_id": "cedar-02",
+      "state": "healthy",
+      "reason": "fresh ok observation",
+      "event_age_seconds": 180.0,
+      "delivery_seconds": 150.0,
+      "delivery_over_budget": true
+    },
+    {
+      "device_id": "cedar-02-terminal",
+      "brand": "Cedar",
+      "site_id": "cedar-02",
+      "state": "degraded",
+      "reason": "fresh explicit error",
+      "event_age_seconds": 50.0,
+      "delivery_seconds": 2.0,
+      "delivery_over_budget": false
+    },
+    {
+      "device_id": "harbor-01-router",
+      "brand": "Harbor",
+      "site_id": "harbor-01",
+      "state": "unknown",
+      "reason": "missing",
+      "event_age_seconds": null,
+      "delivery_seconds": null,
+      "delivery_over_budget": false
+    },
+    {
+      "device_id": "harbor-01-terminal",
+      "brand": "Harbor",
+      "site_id": "harbor-01",
+      "state": "unknown",
+      "reason": "missing",
+      "event_age_seconds": null,
+      "delivery_seconds": null,
+      "delivery_over_budget": false
+    }
+  ],
+  "issues": [
+    {
+      "line": 8,
+      "reason": "device attribution disagrees with inventory"
+    },
+    {
+      "line": 9,
+      "reason": "timestamp is in the future beyond clock tolerance"
+    },
+    {
+      "line": 10,
+      "reason": "status must be ok or error"
+    },
+    {
+      "line": 11,
+      "reason": "device absent from inventory"
+    },
+    {
+      "event_id": "d1",
+      "reason": "conflicting ID quarantined",
+      "lines": [
+        5,
+        6
+      ]
+    }
+  ]
+}
